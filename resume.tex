@@ -1,0 +1,211 @@
+\documentclass{article}
+\usepackage[margin=0.3in]{geometry}
+\pagestyle{empty}
+%\raggedbottom
+\raggedright
+
+%  \renewcommand{\encodingdefault}{cg}
+  %\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[1]{\vspace*{-5pt} \begin{verse} #1 \end{verse} }
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-10pt}\vspace*{9pt} {\large \textsc{#1}}} \vspace*{-5pt} \lineunder}
+\newcommand{\employer}[4]{{ \textbf{#1} $\cdot$ \emph{#3} \hfill #4 $\cdot$ #2 }}
+\newcommand{\contact}[3]{
+\vspace*{-8pt}
+\begin{center}
+{\LARGE \scshape {#1}}\\
+#2 $\cdot$ #3
+\end{center}
+\vspace*{-8pt}
+}
+\newenvironment{achievements}{\begin{list}{$\cdot$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+\newcommand{\schoolwithcourses}[5]{\textbf{#1} \hfill #2 $\cdot$ #3\\#4\\#5\\\vspace*{3pt}}
+\newcommand{\school}[4]{\textbf{#1} \hfill #2 $\cdot$ #3\\}
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+
+\small
+
+\contact{Fernando Trujano}
+{229 Vassar Street, Cambridge, MA 02139}
+{(407)-754-8527 $\cdot$ \texttt{trujano@mit.edu}
+\\{\bf\large{fernandotrujano.com $|$ github.com/fertogo}}}
+
+  \\
+  \\
+
+\header{Education}
+  \\
+\schoolwithcourses{Massachusetts Institute of Technology}{Cambridge, MA}{June 2017 }{}{Candidate for Bachelor of Science in Computer Science and Electrical Engineering}%{Relevant Courses: 6.005 - Elements of Software Construction, 6.006 - Intro to Algorithms, 6.042 - Mathematics for Computer Science}
+%\area{Related Coursework: Elements of Software Construction $\cdot$ Intro to Algorithms $\cdot$ Mathematics for Computer Science}
+\area{
+    Related Coursework: 6.005 - Software Construction $\cdot$ 6.006 - Algorithms I $\cdot$ 6.046 - Algorithms II  $\cdot$ 6.034 - Artificial Intelligence
+
+    \hspace{85pt}
+    6.042 - Mathematics for Computer Science $\cdot$ 6.004 - Computational Structures $\cdot$ 6.170 - Software Studio
+
+
+}
+
+
+
+
+
+% \schoolwithcourses{Harvard Summer School}{Cambridge, MA}{Summer 2012}{}{Computer Science}
+
+% \schoolwithcourses{Guthrie Center for Excellence}{Houston, TX}{2009-2013}{}{Advanced Digital Filmmaking}
+
+\vspace{5pt} \header{Work Experience}
+  \\
+
+\employer{LinkedIn}{Summer 2015}{Web Developer Intern}{Mountain View, CA}
+    \begin{achievements}
+                \item{Developed elegant and efficient code on a large codebase for 380M+ users}}
+                \item{Worked on a new front facing product as part of the growth team using Play/Java, Javascript and HTML/CSS}}
+
+
+
+    \end{achievements}
+
+\employer{Slide}{Winter 2015}{Software Engineering Intern}{New York, NY}
+    \begin{achievements}
+                \item{Focused on developing the web application core with React.js, Reflux and GSAP}
+
+
+    \end{achievements}
+  \\
+
+  \employer{Sibzy}{2013-2014}{Co-Founder}{Cambridge, MA}
+    \begin{achievements}
+                \item{Founded a startup in locally-sourced, custom, made-to-order food delivery}
+                \item{Designed and built frontend, assisted with Django backend. Participated in StartIAP Startup Accelerator 2014}
+
+    \end{achievements}
+
+\employer{MIT Media Lab}{Spring 2014}{Undergraduate researcher}{Cambridge, MA}
+    \begin{achievements}
+                % \item{UROP in Changing Places group. Focused on LightByte, an interactive sun pixel display with  }
+                \item{Maintained current LightByte system - an interactive sun pixel display with over 400 individually controlled shutters }
+                \item { Implemented server connections/real-time streaming features to support remote interactions through a web interface }
+                \item{Expanded Android application and produced websites, graphics and videos to showcase various research projects }
+
+    \end{achievements}
+  \\
+
+\employer{MIT EECS Department}{Spring 2014}{Undergraduate Lab Assistant}{Cambridge, MA}
+    \begin{achievements}
+              %  \item{Student Lab Assistant for 6.01 - Intro to Electrical Engineering and Computer Science}
+                \item{Worked with staff/professors to prepare design labs for 6.01 - Intro to EECS course}
+                \item{Assisted students with basic OOP, algorithm concepts, and helped debug circuits}
+
+    \end{achievements}
+
+\employer{Harvard Student Agencies}{Summer 2012}{Web Developer Intern}{Cambridge, MA}
+    \begin{achievements}
+                \item{Implemented combination of HTML, CSS, jQuery and Liquid.}
+                \item { Built and designed "The Harvard Shop's" custom order, request a quote, and portfolio pages}
+
+    \end{achievements}
+
+
+
+% \employer{British Petroleum}{2012}{Videographer}{Houston, TX}
+%     \begin{achievements}
+%                 \item{Produced "Fabric of America" 2013 video}
+%   \end{achievements}
+
+     \\
+
+
+
+\vspace{-8pt} \header{Projects}
+  \\
+
+\employer{Asterisks}{Summer 2015 - Present}{Node.js, Express.js, MongoDB, PHP, HTML/CSS/jQuery}{Mountain View, CA}
+    \begin{achievements}
+            \item{Developed a chrome extension that allows friends to easily and securely share internet accounts without sharing credentials}
+            \item{Built the backend in node.js and frontend of extension in HTML/JS/CSS. Created internal tools for logging and debugging }
+            \item{Won 1st place at LinkedIn's bay area intern hackathon www.asterisks.io}
+    \end{achievements}
+
+\employer{Pebble Custom Workout Timer}{Summer 2014}{C, Javascript, PHP, Node.js, HTML/CSS/jQuery}{Houston, TX}
+    \begin{achievements}
+            \item{Created Pebble-guided custom workout app with input from phone or computer. Used by over 8000 users in 120+ countries   }
+    \end{achievements}
+
+\employer{Underwater Robotics}{2012-2013}{Arduino,C#}{Houston, TX}
+    \begin{achievements}
+            \item{Designed, built, programmed, and troubleshooted an underwater ROV for MATE ROV. Team of three. }
+            \item{Robot featured a metal detector, 3D compass, manipulator, measuring device and a visual control station
+    \end{achievements}
+
+    \employer{AfterEffects Scripting}{2012-2013}{Adobe ExtendScript}{Houston,TX}
+    \begin{achievements}
+            \item{Developed AudioSyncR - After Effects script for semi automatic audio syncing for use with typography music videos  }
+    \end{achievements}
+
+
+     \employer{Filmmaking and Motion Graphics}{2008-Present}{}{Houston, TX}
+    \begin{achievements}
+            \item{Produced videos with over 200,000 views on YouTube. See portfolio at www.fernandotrujano.com}
+    \end{achievements}
+   \\
+
+
+\header{Leadership}
+  \\
+    \employer{HackMIT}{2015}{Organizer}{Cambridge, MA}
+    \begin{achievements}
+            \item{Assisted in organization, logistics, corporate relations and devOps for a 1000 person hackathon  }
+
+    \end{achievements}
+
+    \employer{MIT Sigma Phi Epsilon}{2014 and 2015}{Rush Chair}{Cambridge, MA}
+    \begin{achievements}
+            \item{Organized, planned and excecuted over 50 total events with a budget of \$20,000  }
+            \item{Coordinated 25+ brothers and oversaw all aspects of recruitment for two consecutive years  }
+
+    \end{achievements}
+
+
+
+
+\header{Skills}
+  \\
+\begin{achievements}
+
+    \item {\bf Technical:} Java, Python, Node.js, HTML, CSS, Javascript/jQuery, ExtendScript,Arduino, \LaTeX
+    \item {\bf Programs:} After Effects, Photoshop, Final Cut Pro X
+    \item {{\bf Non-technical:} Fluent in English and Spanish, Instruments: French Horn and Mellophone
+\end{achievements}
+
+
+% \vspace{5pt} \header{Honors and Awards}
+  \\
+
+% \begin{achievements}
+% %    \item{2010: Finalist of National "World of 7 Billion" PSA Video contest}
+% %    \item{2010: Short Film "Designed Death" screened at local movie theater}
+%     \item{2011: 1st place in Business Professionals of America Financial Math and Analysis}
+%     \item{2011: 2nd place in Business Professionals of America C++ Programming Competition + State Qualifier}
+% %    \item{2012: Reel Teen Festival Winner}
+% %    \item{2013: 1st place at KinderVision's "The Greatest Save" PSA Contest.}
+% %    \item{2013: Bronze Remi at Worldfest International Film Festival}
+% %    \item{2013: Silver Remi at Worldfest International Film Festival}
+
+% \end{achievements}
+
+
+
+
+
+
+
+
+
+\end{document}
