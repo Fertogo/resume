@@ -1,0 +1,65 @@
+\newcommand{\relatedcoursework}[3]{
+    \vspace{-4pt}
+    \hspace{30pt} Related Coursework:  #1 \newline 
+    \hspace*{126pt} #2
+    \hspace*{126pt} #3
+}
+
+\newcommand{\lineunder}{
+    \vspace*{-8pt} \\ 
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header}[1]{
+    {\hspace*{-10pt}\vspace*{9pt} {\large \textsc{#1}}} \vspace*{-5pt} \lineunder \vspace*{5pt}
+}
+\newcommand{\employer}[4]{
+    { \textbf{#1} $\cdot$ \emph{#3} \hfill #4 $\cdot$ #2 }
+}
+
+\newcommand{\contact}[3]{
+    \vspace*{-8pt}
+    \begin{center}
+    {\LARGE \scshape {#1}}\\
+    #2 $\cdot$ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+\newenvironment{achievements}{
+    \begin{list}{$\cdot$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}
+}
+
+\newcommand{\schoolwithcourses}[4]{
+    \textbf{#1} 
+    \hfill #2 
+    $\cdot$ #3
+    \\#4\\\vspace*{4pt}
+}
+
+\newcommand{\school}[4]{
+    \textbf{#1} \hfill #2 $\cdot$ #3\\
+}
+
+\newcommand{\publication}[1]{
+    \begin{blockquote}
+       \footnotesize #1
+    \end{blockquote}
+    
+    \vspace{-3pt}
+}
+
+\newcommand{\skills}[3]{
+    \begin{blockquote}
+       \textbf {Technical:} #1 \newline
+       \textbf {Programs:} #2 \newline
+       \textbf {Non-technical:} #3
+   \end{blockquote}
+}
+
+\newenvironment{blockquote}{
+  \par%
+  \medskip
+  \leftskip=4pt\rightskip=3em
+  \noindent\ignorespaces}{
+  \par\medskip
+ }
